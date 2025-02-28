@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: seashell;
+}
+
+body.dark {
+    background-color: #080808;
+    color: #ffffff;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.animated-bg {
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+}
